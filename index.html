@@ -359,24 +359,24 @@
             
             if (parseInt(rainProb) > 30) {
                 rainIcon = "🐢"; // 烏龜 (有點危險)
-                rainText = "小心濕滑";
+                rainText = "小心濕滑踩到龜";
                 if (parseInt(rainProb) > 60) {
                     rainIcon = "🌂"; 
-                    rainText = "記得帶傘";
+                    rainText = "下雨不出門打怪";
                 }
             } else {
-                rainText = "不用帶傘";
+                rainText = "放心打怪去";
             }
 
             let clothIcon = "👕";
-            let clothText = "標準吊帶褲";
+            let clothText = "標準外出裝";
             
             if (parseInt(maxTemp) >= 28) {
                 clothIcon = "🔥"; // 火球花
-                clothText = "短袖出發";
+                clothText = "天熱出發打BOSS";
             } else if (parseInt(maxTemp) <= 20) {
                 clothIcon = "🧥"; // 狸貓裝/外套
-                clothText = "加件外套";
+                clothText = "天冷包緊緊";
             }
 
             return { rainIcon, rainText, clothIcon, clothText };
